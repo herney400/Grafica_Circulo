@@ -98,6 +98,13 @@ public class InterfazGrafica extends JFrame implements ActionListener{
           
           for(int i=0;i<vectorcartesian.size();i++){
               p.Punto(((Point)vectorcartesian.elementAt(i)).x, ((Point)vectorcartesian.elementAt(i)).y);
+              p.Punto(((Point)vectorcartesian.elementAt(i)).y, ((Point)vectorcartesian.elementAt(i)).x);
+              p.Punto(((Point)vectorcartesian.elementAt(i)).x*-1, ((Point)vectorcartesian.elementAt(i)).y);
+              p.Punto(((Point)vectorcartesian.elementAt(i)).y*-1, ((Point)vectorcartesian.elementAt(i)).x*-1);
+              
+//                 p.Punto(((Point)vectorcartesian.elementAt(i)).x*-1, ((Point)vectorcartesian.elementAt(i)).y);
+//                 p.Punto(((Point)vectorcartesian.elementAt(i)).x, ((Point)vectorcartesian.elementAt(i)).y*-1);
+   
               p.repaint();
           }
    
