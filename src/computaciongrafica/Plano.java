@@ -234,8 +234,8 @@ public class Plano extends Canvas
        for(j=0; j<mm; j++)
        {
            g.setColor(new Color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255)));
-           g.fillOval(x[j]-3, (int)MaxY-y[j]-3,  6, 6);
-           g.drawString("A"+(j+1)+"("+cx[j]+","+cy[j]+")", x[j]-30, (int)MaxY-y[j]-10);
+           g.fillOval(x[j]-3, (int)MaxY-y[j]-3,  10, 10);
+      //     g.drawString("A"+(j+1)+"("+cx[j]+","+cy[j]+")", x[j]-30, (int)MaxY-y[j]-10);
         }
         g.setColor(Color.black);
         g.drawOval(Xo-3, (int)MaxY-Yo-3, 6, 6);
