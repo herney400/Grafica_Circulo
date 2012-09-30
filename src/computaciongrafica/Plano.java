@@ -238,7 +238,7 @@ public class Plano extends Canvas
       //     g.drawString("A"+(j+1)+"("+cx[j]+","+cy[j]+")", x[j]-30, (int)MaxY-y[j]-10);
         }
         g.setColor(Color.black);
-        g.drawOval(Xo-3, (int)MaxY-Yo-3, 6, 6);
+        g.drawOval(Xo-3, (int)MaxY-Yo-3, 8, 8);
    }
    public String Redondear(double val)
    {
