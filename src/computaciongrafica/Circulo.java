@@ -17,7 +17,7 @@ import javax.swing.JPanel;
  *
  * @author palacioscuacialpud
  */
-public class Circulo extends JPanel{
+public class Circulo extends JPanel {
      Vector vectorcartesian=new Vector();
      Vector vectorcordenadasjava=new Vector();
       
@@ -51,10 +51,30 @@ public class Circulo extends JPanel{
 //       yenviar= Math.rint((ylista=ylista+yseva)*10)/10;
         vectorcartesian.add(new Point(x, y));
         
-//       vectorcordenadasjava.add(new Point.Double(x, yenviar) );
-                
-     }  
-    
+//       vectorcordenadasjava.add(new Point.Double(x, yenviar) );                
+     } 
+     }
+     
+     public void crearCirculoPM(int radio){
+     int x=0,y,d;
+     y=radio;
+     d=1-radio;
+     
+         while (y>x) {             
+            if(d<0){
+              d=d+2*x+3;
+               x=x+1;       
+            
+            }else{
+               d=d+2*(x-y)+5;
+               x=x+1;
+               y=y-1;
+            
+            }
+             
+            vectorcartesian.add(new Point(x, y)); 
+             
+         }
      
      }
      
