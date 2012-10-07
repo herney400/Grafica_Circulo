@@ -29,7 +29,7 @@ import javax.swing.SwingConstants;
 public class InterfazGrafica extends JFrame implements ActionListener {
   Thread mihilo=new Thread();
     JPanel miPanel, panelSuper, pfan;
-    Plano p = new Plano(30);
+    Plano p = new Plano(50);
     JButton boto;
     JTextField jteradio;
     Vector vectorcartesian = new Vector();
@@ -69,7 +69,7 @@ public class InterfazGrafica extends JFrame implements ActionListener {
         jslider.setValue(10);
 
         ////        contenedor.add(miPanel, BorderLayout.CENTER);
-        p.Limites(10, 10, -10, -10);
+        p.Limites(70, 70, -70, -70);
         p.Origen();
         miPanel.add(jteradio);
         miPanel.add(boto);
@@ -91,16 +91,10 @@ public class InterfazGrafica extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == boto) {
             int r = Integer.parseInt(jteradio.getText());
- 
-         
-        
-            //  c.crearCirculo(r);
-            c.crearCirculoPM(r);
-               
+  //  c.crearCirculo(r);
+            c.crearCirculoPM(r);               
                 grafica();
             
-                
-           
         }
     }
 
